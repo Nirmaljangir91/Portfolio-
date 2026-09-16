@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Hide scrollbar but keep scrolling */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 50px 50px;
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 10%,
+    transparent 75%
+  );
+}
