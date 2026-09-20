@@ -48,10 +48,8 @@ const Hero = () => {
               Available for opportunities
             </div>
 
-            {/* Subtitle */}
-
             <p className="hero-subtitle mb-5 text-xs uppercase tracking-[0.35em] text-purple-300/60 sm:text-sm">
-              Full Stack Developer
+              MERN Stack Developer Intern
             </p>
 
             {/* Title */}

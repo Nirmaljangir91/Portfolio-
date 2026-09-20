@@ -9,6 +9,10 @@ const skills = [
   "MongoDB",
   "Tailwind CSS",
   "GSAP",
+  "MySQL",
+  "SQL",
+  "CI/CD",
+  "Git"
 ];
 
 const About = () => {
@@ -67,16 +71,12 @@ const About = () => {
                 </span>
               </div>
 
-              <p className="about-description text-base leading-8 text-white/60 sm:text-lg">
-                I'm Nirmal, an engineering student and aspiring full-stack
-                developer who enjoys turning ideas into modern, interactive web
-                experiences.
+              <p className="about-description text-base leading-8 text-white/60 sm:text-sm">
+                I'm Nirmal Jangir, a Computer Science (B.Tech) student at Bikaner Technical University and a MERN Stack Developer Intern at Grass Solution Pvt Ltd. I enjoy turning ideas into modern, interactive web experiences.
               </p>
 
-              <p className="about-description mt-5 text-base leading-8 text-white/60 sm:text-lg">
-                I work primarily with React, JavaScript, Tailwind CSS, GSAP,
-                Node.js, and Express.js, with a strong interest in frontend
-                development, UI/UX, animations, and responsive applications.
+              <p className="about-description mt-5 text-base leading-8 text-white/60 sm:text-sm">
+                I work primarily with React, JavaScript, Node.js, Express.js, MongoDB, and SQL. I have a strong interest in backend development, API design, CI/CD, and full-stack software development.
               </p>
 
               <p className="about-description mt-5 text-base leading-8 text-white/60 sm:text-lg">

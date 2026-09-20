@@ -148,7 +148,7 @@ const Footer = () => {
               className="
                 text-xl
                 transition-transform
-                duration-300
+                duration-300  
                 group-hover:-translate-y-1
               "
             >

@@ -34,7 +34,7 @@ const Contact = () => {
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
 
-    window.location.href = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:jangirsarwan91@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -281,7 +281,7 @@ const Contact = () => {
                 {/* Email */}
 
                 <a
-                  href="mailto:your-email@example.com"
+                  href="mailto:jangirsarwan91@gmail.com"
                   className="
                     contact-detail
                     group
@@ -321,7 +321,7 @@ const Contact = () => {
                     </p>
 
                     <p className="mt-1 text-sm text-white/55 transition-colors group-hover:text-white/80">
-                      your-email@example.com
+                      jangirsarwan91@gmail.com
                     </p>
                   </div>
                 </a>
@@ -354,7 +354,7 @@ const Contact = () => {
                     </p>
 
                     <p className="mt-1 text-sm text-white/55">
-                      India
+                      Sikar, Rajasthan, India
                     </p>
                   </div>
                 </div>
@@ -415,7 +415,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="mailto:your-email@example.com"
+                    href="mailto:jangirsarwan91@gmail.com"
                     className="
                       rounded-full
                       border
