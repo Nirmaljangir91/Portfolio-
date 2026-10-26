@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
-import { contactAnimation } from "../Animations/Contact.animation";
+import { contactAnimation } from "../Animations/contact.animation";
 
 const Contact = () => {
   const contactRef = useRef(null);

@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from "react";
-import { footerAnimation } from "../Animations/Footer.animation";
+import { footerAnimation } from "../Animations/footer.animation";
 
 const Footer = () => {
   const footerRef = useRef(null);
