@@ -286,12 +286,12 @@ const Footer = () => {
                 text-white/20
               "
             >
-              Social
+              Social & Profiles
             </p>
 
             <div className="flex flex-col gap-3">
               <a
-                href="https://github.com/"
+                href="https://github.com/Nirmaljangir91"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -308,7 +308,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/nirmal-jangir"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -325,7 +325,24 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:your-email@example.com"
+                href="https://nirmal-s-portfolio-eight.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  footer-link
+                  w-fit
+                  text-sm
+                  text-white/40
+                  transition-colors
+                  duration-300
+                  hover:text-white
+                "
+              >
+                Portfolio Live ↗
+              </a>
+
+              <a
+                href="mailto:jangirsarwan91@gmail.com"
                 className="
                   footer-link
                   w-fit
@@ -353,11 +370,11 @@ const Footer = () => {
                 text-white/20
               "
             >
-              Stack
+              Core Stack
             </p>
 
             <div className="flex flex-wrap gap-2">
-              {["React", "Node.js", "MongoDB", "GSAP"].map((tech) => (
+              {["React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS", "REST APIs"].map((tech) => (
                 <span
                   key={tech}
                   className="
@@ -368,7 +385,7 @@ const Footer = () => {
                     px-3
                     py-1.5
                     text-[10px]
-                    text-white/35
+                    text-white/40
                   "
                 >
                   {tech}
@@ -398,20 +415,16 @@ const Footer = () => {
             sm:text-left
           "
         >
-          <p className="text-[11px] text-white/20">
-            © {new Date().getFullYear()} Nirmal. All rights reserved.
+          <p className="text-[11px] text-white/30">
+            © {new Date().getFullYear()} Nirmal Jangid. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-2 text-[11px] text-white/20">
-            <span>Made with</span>
-
-            <span className="text-purple-300/60">♥</span>
-
-            <span>and lots of code.</span>
+          <div className="flex items-center gap-2 text-[11px] text-white/30">
+            <span>MERN Stack Developer · Grass Solution</span>
           </div>
 
-          <p className="text-[11px] text-white/20">
-            React · Tailwind · GSAP
+          <p className="text-[11px] text-white/30">
+            React · Tailwind · GSAP · Node
           </p>
         </div>
       </div>

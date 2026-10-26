@@ -49,7 +49,7 @@ const Hero = () => {
             </div>
 
             <p className="hero-subtitle mb-5 text-xs uppercase tracking-[0.35em] text-purple-300/60 sm:text-sm">
-              MERN Stack Developer Intern
+              MERN Stack Developer
             </p>
 
             {/* Title */}
@@ -74,9 +74,7 @@ const Hero = () => {
             {/* Description */}
 
             <p className="hero-description mt-8 max-w-xl text-base leading-7 text-white/45 sm:text-lg">
-              I design and build modern, scalable web applications
-              with clean interfaces, powerful interactions, and
-              meaningful user experiences.
+              Motivated MERN Stack Developer with hands-on experience building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Skilled in developing responsive user interfaces, building RESTful APIs, and crafting scalable digital experiences.
             </p>
 
             {/* Buttons */}
@@ -107,9 +105,9 @@ const Hero = () => {
 
             {/* Technologies */}
 
-            <div className="hero-tech mt-12 flex flex-wrap items-center gap-4 text-xs text-white/25">
+            <div className="hero-tech mt-12 flex flex-wrap items-center gap-4 text-xs text-white/35">
 
-              <span>React</span>
+              <span>React.js</span>
 
               <span className="h-1 w-1 rounded-full bg-white/20" />
 
@@ -117,11 +115,15 @@ const Hero = () => {
 
               <span className="h-1 w-1 rounded-full bg-white/20" />
 
+              <span>Express.js</span>
+
+              <span className="h-1 w-1 rounded-full bg-white/20" />
+
               <span>MongoDB</span>
 
               <span className="h-1 w-1 rounded-full bg-white/20" />
 
-              <span>GSAP</span>
+              <span>REST APIs</span>
 
             </div>
 
@@ -175,11 +177,11 @@ const Hero = () => {
                 <div className="absolute bottom-8 left-0 right-0 text-center">
 
                   <p className="text-[10px] uppercase tracking-[0.4em] text-white/40">
-                    Engineer
+                    MERN Developer
                   </p>
 
                   <h2 className="mt-1 text-xl font-semibold text-white/90">
-                    Nirmal.
+                    Nirmal Jangid
                   </h2>
 
                 </div>
@@ -199,11 +201,11 @@ const Hero = () => {
             <div className="hero-floating absolute right-0 top-16 rounded-2xl border border-white/10 bg-white/[0.07] px-5 py-4 shadow-xl backdrop-blur-xl">
 
               <div className="text-[10px] uppercase tracking-[0.2em] text-white/30">
-                Stack
+                Experience
               </div>
 
               <div className="mt-1 font-medium text-white/80">
-                MERN + GSAP
+                Grass Solution · 6 Mo
               </div>
 
             </div>
@@ -223,11 +225,11 @@ const Hero = () => {
                 <div>
 
                   <p className="text-[10px] uppercase tracking-wider text-white/30">
-                    Currently
+                    Stack
                   </p>
 
-                  <p className="text-sm text-white/70">
-                    Building
+                  <p className="text-sm font-medium text-white/80">
+                    MERN + REST APIs
                   </p>
 
                 </div>

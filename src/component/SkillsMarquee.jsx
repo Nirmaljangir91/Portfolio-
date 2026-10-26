@@ -2,20 +2,20 @@ import { useLayoutEffect, useRef } from "react";
 import { skillsAnimation } from "../Animations/Skills.animation";
 
 const skills = [
-  "JavaScript",
-  "React",
+  "React.js",
   "Node.js",
   "Express.js",
   "MongoDB",
   "Mongoose",
+  "JavaScript (ES6+)",
+  "RESTful APIs",
   "Tailwind CSS",
-  "GSAP",
-  "HTML",
-  "CSS",
-  "Git",
-  "GitHub",
-  "REST API",
+  "Git & GitHub",
+  "HTML5 & CSS3",
+  "CRUD Operations",
   "Vite",
+  "Responsive Web Design",
+  "Authentication",
 ];
 
 const SkillsMarquee = () => {

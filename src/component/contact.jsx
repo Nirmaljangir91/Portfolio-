@@ -326,6 +326,54 @@ const Contact = () => {
                   </div>
                 </a>
 
+                {/* Phone */}
+
+                <a
+                  href="tel:+919057630642"
+                  className="
+                    contact-detail
+                    group
+                    flex
+                    items-center
+                    gap-4
+                    transition-colors
+                    duration-300
+                  "
+                >
+                  <div
+                    className="
+                      flex
+                      h-11
+                      w-11
+                      shrink-0
+                      items-center
+                      justify-center
+                      rounded-xl
+                      border
+                      border-white/[0.07]
+                      bg-white/[0.035]
+                      text-sm
+                      text-purple-300/70
+                      transition-all
+                      duration-300
+                      group-hover:border-purple-400/20
+                      group-hover:bg-purple-500/10
+                    "
+                  >
+                    📞
+                  </div>
+
+                  <div>
+                    <p className="text-[10px] uppercase tracking-[0.18em] text-white/20">
+                      Phone
+                    </p>
+
+                    <p className="mt-1 text-sm text-white/55 transition-colors group-hover:text-white/80">
+                      +91 9057630642
+                    </p>
+                  </div>
+                </a>
+
                 {/* Location */}
 
                 <div className="flex items-center gap-4">
@@ -364,12 +412,12 @@ const Contact = () => {
 
               <div className="mt-10 border-t border-white/[0.06] pt-7">
                 <p className="mb-4 text-[10px] uppercase tracking-[0.2em] text-white/20">
-                  Connect
+                  Connect & Profiles
                 </p>
 
                 <div className="flex flex-wrap gap-2">
                   <a
-                    href="https://github.com/"
+                    href="https://github.com/Nirmaljangir91"
                     target="_blank"
                     rel="noreferrer"
                     className="
@@ -380,10 +428,10 @@ const Contact = () => {
                       px-4
                       py-2
                       text-xs
-                      text-white/40
+                      text-white/50
                       transition-all
                       duration-300
-                      hover:border-white/15
+                      hover:border-white/20
                       hover:bg-white/[0.06]
                       hover:text-white
                     "
@@ -392,7 +440,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://linkedin.com/"
+                    href="https://linkedin.com/in/nirmal-jangir"
                     target="_blank"
                     rel="noreferrer"
                     className="
@@ -403,15 +451,38 @@ const Contact = () => {
                       px-4
                       py-2
                       text-xs
-                      text-white/40
+                      text-white/50
                       transition-all
                       duration-300
-                      hover:border-white/15
+                      hover:border-white/20
                       hover:bg-white/[0.06]
                       hover:text-white
                     "
                   >
                     LinkedIn
+                  </a>
+
+                  <a
+                    href="https://nirmal-s-portfolio-eight.vercel.app"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="
+                      rounded-full
+                      border
+                      border-white/[0.07]
+                      bg-white/[0.025]
+                      px-4
+                      py-2
+                      text-xs
+                      text-white/50
+                      transition-all
+                      duration-300
+                      hover:border-white/20
+                      hover:bg-white/[0.06]
+                      hover:text-white
+                    "
+                  >
+                    Portfolio Live
                   </a>
 
                   <a
@@ -424,15 +495,15 @@ const Contact = () => {
                       px-4
                       py-2
                       text-xs
-                      text-white/40
+                      text-white/50
                       transition-all
                       duration-300
-                      hover:border-white/15
+                      hover:border-white/20
                       hover:bg-white/[0.06]
                       hover:text-white
                     "
                   >
-                    Email
+                    Email Me
                   </a>
                 </div>
               </div>
@@ -692,7 +763,7 @@ const Contact = () => {
           "
         >
           <p className="text-xs text-white/20">
-            © {new Date().getFullYear()} Nirmal. All rights reserved.
+            © {new Date().getFullYear()} Nirmal Jangid. All rights reserved.
           </p>
 
           <p className="text-xs text-white/20">

@@ -5,46 +5,54 @@ const projects = [
   {
     number: "01",
     category: "AI / Full Stack",
-    title: "AI Learning Visualizer",
+    title: "AI Project",
+    subtitle: "Intelligent Software Platform",
     description:
-      "Transform notes and complex topics into interactive visual learning experiences using AI-generated explanations, diagrams, and structured content.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "AI API"],
+      "Developed an AI-focused project as part of practical software development work. Organized the project codebase to support maintainable development and future enhancements, while focusing on implementing application functionality, seamless API integration, and an elevated user experience.",
+    bulletPoints: [
+      "Developed an AI-focused project as part of practical software development work.",
+      "Organized codebase to support maintainable development and future enhancements.",
+      "Focused on implementing application functionality and improving the user experience."
+    ],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RESTful APIs",
+      "Tailwind CSS"
+    ],
     accent: "purple",
-    github: "#",
-    live: "#",
+    logo: "/ai_project_logo.jpg",
+    github: "https://github.com/Nirmaljangir91",
+    live: "https://nirmal-s-portfolio-eight.vercel.app",
+    floatingTech: ["React.js", "AI APIs"],
   },
   {
     number: "02",
-    category: "Full Stack",
-    title: "Event Management",
+    category: "Full Stack / SaaS",
+    title: "Business Appointments",
+    subtitle: "Appointment Booking System",
     description:
-      "A complete event management platform connecting users, organizers, and administrators with event discovery, registration, management, and authentication.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
+      "Developed a business appointment-booking application focused on simplifying appointment management. Worked on application structure and features for a user-friendly booking experience, and designed the project for further development of business appointment workflows.",
+    bulletPoints: [
+      "Developed an appointment-booking application focused on simplifying appointment management.",
+      "Worked on application structure and features for a user-friendly booking experience.",
+      "Designed the project architecture for further development of business appointment workflows."
+    ],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Tailwind CSS"
+    ],
     accent: "blue",
-    github: "#",
-    live: "#",
-  },
-  {
-    number: "03",
-    category: "AI / Productivity",
-    title: "AI Resume Analyzer",
-    description:
-      "Analyze resumes against job descriptions and provide structured feedback on skills, missing keywords, experience, and improvement opportunities.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "AI API"],
-    accent: "pink",
-    github: "#",
-    live: "#",
-  },
-  {
-    number: "04",
-    category: "Real-Time Application",
-    title: "CollabSpace",
-    description:
-      "A real-time collaboration platform where users can create workspaces, share tasks, communicate, and work together through synchronized updates.",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-    accent: "green",
-    github: "#",
-    live: "#",
+    logo: "/appointment_booking_logo.jpg",
+    github: "https://github.com/Nirmaljangir91",
+    live: "https://nirmal-s-portfolio-eight.vercel.app",
+    floatingTech: ["Node.js", "MongoDB"],
   },
 ];
 
@@ -141,7 +149,7 @@ const Projects = () => {
               <span className="h-px w-10 bg-purple-400/60" />
 
               <span className="text-[11px] uppercase tracking-[0.35em] text-purple-300/60">
-                Selected Work
+                Featured Projects
               </span>
             </div>
 
@@ -168,9 +176,8 @@ const Projects = () => {
 
           <div className="projects-intro lg:pb-2">
             <p className="max-w-lg text-base leading-7 text-white/40 sm:text-lg">
-              A collection of experiments and applications focused on solving
-              real problems through modern full-stack development, AI, and
-              interactive interfaces.
+              Featured full-stack applications showcasing MERN development,
+              AI integration, clean codebase architecture, and responsive user experiences.
             </p>
           </div>
         </div>
@@ -295,7 +302,7 @@ const Projects = () => {
                   </div>
 
                   {/* =================================================
-                      BROWSER
+                      BROWSER WITH LOGO SHOWCASE
                   ================================================== */}
 
                   <div
@@ -303,7 +310,7 @@ const Projects = () => {
                       project-browser
                       relative
                       z-10
-                      w-[82%]
+                      w-[84%]
                       overflow-hidden
                       rounded-[18px]
                       border
@@ -312,7 +319,7 @@ const Projects = () => {
                       shadow-[0_30px_70px_rgba(0,0,0,0.55),0_0_50px_rgba(168,85,247,0.06)]
                       [transform-style:preserve-3d]
                       backdrop-blur-xl
-                      sm:w-[76%]
+                      sm:w-[78%]
                     "
                   >
                     {/* Browser top */}
@@ -331,9 +338,9 @@ const Projects = () => {
                       "
                     >
                       <div className="flex gap-1.5">
-                        <span className="browser-dot h-[7px] w-[7px] rounded-full bg-white/[0.18]" />
-                        <span className="browser-dot h-[7px] w-[7px] rounded-full bg-white/[0.18]" />
-                        <span className="browser-dot h-[7px] w-[7px] rounded-full bg-white/[0.18]" />
+                        <span className="browser-dot h-[7px] w-[7px] rounded-full bg-red-400/40" />
+                        <span className="browser-dot h-[7px] w-[7px] rounded-full bg-yellow-400/40" />
+                        <span className="browser-dot h-[7px] w-[7px] rounded-full bg-green-400/40" />
                       </div>
 
                       <div
@@ -345,114 +352,81 @@ const Projects = () => {
                           whitespace-nowrap
                           text-[9px]
                           tracking-wide
-                          text-white/20
+                          text-white/30
                         "
                       >
-                        {project.title.toLowerCase().replaceAll(" ", "-")}
+                        nirmal.portfolio/{project.title.toLowerCase().replaceAll(" ", "-")}
                       </div>
                     </div>
 
                     {/* Browser content */}
 
-                    <div className="project-browser-content p-3 sm:p-[18px]">
-                      {/* Fake header */}
+                    <div className="project-browser-content p-4 sm:p-5">
+                      {/* Browser Header with Project Logo */}
 
-                      <div className="fake-header mb-[18px] flex items-center justify-between">
-                        <div
-                          className="
-                            fake-logo
-                            flex
-                            h-7
-                            w-7
-                            items-center
-                            justify-center
-                            rounded-lg
-                            bg-purple-500/15
-                            text-[11px]
-                            font-bold
-                            text-purple-300/80
-                          "
-                        >
-                          {project.title.charAt(0)}
+                      <div className="fake-header mb-4 flex items-center justify-between">
+                        <div className="flex items-center gap-2.5">
+                          <div className="fake-logo relative h-8 w-8 overflow-hidden rounded-lg border border-white/15 bg-white/5 shadow-md">
+                            <img
+                              src={project.logo}
+                              alt={project.title}
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+
+                          <div>
+                            <p className="text-xs font-semibold text-white/90 leading-none">
+                              {project.title}
+                            </p>
+                            <span className="text-[8px] uppercase tracking-wider text-purple-300/60">
+                              {project.category}
+                            </span>
+                          </div>
                         </div>
 
-                        <div className="fake-header-lines flex gap-1.5">
-                          <span className="h-1 w-6 rounded-full bg-white/[0.08]" />
-                          <span className="h-1 w-6 rounded-full bg-white/[0.08]" />
-                          <span className="h-1 w-6 rounded-full bg-white/[0.08]" />
+                        <div className="flex items-center gap-1.5 rounded-full border border-green-400/20 bg-green-400/10 px-2 py-0.5 text-[8px] text-green-300">
+                          <span className="h-1 w-1 rounded-full bg-green-400 animate-pulse" />
+                          <span>Active</span>
                         </div>
                       </div>
 
-                      {/* Dashboard */}
+                      {/* Main Showcase with Logo Feature */}
 
-                      <div
-                        className="
-                          fake-dashboard
-                          grid
-                          grid-cols-[30px_1fr]
-                          gap-2
-                          sm:grid-cols-[50px_1fr]
-                          sm:gap-3.5
-                        "
-                      >
-                        {/* Sidebar */}
-
-                        <div className="fake-sidebar flex flex-col items-center gap-3 pt-2">
-                          <span
-                            className="
-                              active
-                              h-[18px]
-                              w-[18px]
-                              rounded-md
-                              bg-purple-500/30
-                              shadow-[0_0_20px_rgba(168,85,247,0.15)]
-                            "
-                          />
-
-                          <span className="h-[18px] w-[18px] rounded-md bg-white/[0.06]" />
-                          <span className="h-[18px] w-[18px] rounded-md bg-white/[0.06]" />
-                          <span className="h-[18px] w-[18px] rounded-md bg-white/[0.06]" />
-                        </div>
-
-                        {/* Main */}
-
-                        <div className="fake-main min-w-0">
-                          <div className="fake-main-title mb-4 h-[9px] w-[45%] rounded-full bg-white/[0.15]" />
-
-                          {/* Small cards */}
-
-                          <div className="fake-cards mb-3.5 grid grid-cols-3 gap-2">
-                            <span className="h-[45px] rounded-[10px] border border-white/[0.06] bg-gradient-to-br from-white/[0.06] to-white/[0.015] sm:h-[65px]" />
-
-                            <span className="h-[45px] rounded-[10px] border border-white/[0.06] bg-gradient-to-br from-white/[0.06] to-white/[0.015] sm:h-[65px]" />
-
-                            <span className="h-[45px] rounded-[10px] border border-white/[0.06] bg-gradient-to-br from-white/[0.06] to-white/[0.015] sm:h-[65px]" />
+                      <div className="rounded-xl border border-white/[0.06] bg-gradient-to-br from-white/[0.04] to-transparent p-4">
+                        <div className="flex items-center gap-4">
+                          <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border border-white/20 shadow-2xl">
+                            <img
+                              src={project.logo}
+                              alt={project.title}
+                              className="h-full w-full object-cover"
+                            />
+                            <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl" />
                           </div>
 
-                          {/* Chart */}
+                          <div className="min-w-0 flex-1">
+                            <p className="text-xs font-medium text-white/80">
+                              {project.subtitle}
+                            </p>
+                            <p className="mt-1 line-clamp-2 text-[10px] leading-4 text-white/40">
+                              {project.description}
+                            </p>
+                          </div>
+                        </div>
 
-                          <div
-                            className="
-                              fake-chart
-                              relative
-                              h-[70px]
-                              overflow-hidden
-                              rounded-xl
-                              border
-                              border-white/[0.06]
-                              bg-gradient-to-b
-                              from-purple-500/[0.07]
-                              to-transparent
-                              sm:h-[105px]
-                            "
-                          >
-                            <div className="chart-line chart-1 absolute left-[8%] top-[70%] h-[2px] w-[45%] origin-left rotate-[-15deg] rounded-full bg-purple-300/55" />
+                        {/* Interactive mini-stats */}
 
-                            <div className="chart-line chart-2 absolute left-[48%] top-[58%] h-[2px] w-[30%] origin-left rotate-[15deg] rounded-full bg-purple-300/55" />
-
-                            <div className="chart-line chart-3 absolute left-[70%] top-[65%] h-[2px] w-[25%] origin-left rotate-[-28deg] rounded-full bg-purple-300/55" />
-
-                            <div className="chart-line chart-4 absolute left-[82%] top-[50%] h-[2px] w-[20%] origin-left rotate-[18deg] rounded-full bg-purple-300/55" />
+                        <div className="mt-3.5 grid grid-cols-3 gap-2 border-t border-white/[0.06] pt-3">
+                          <div className="rounded-lg bg-white/[0.03] p-1.5 text-center">
+                            <p className="text-[9px] font-semibold text-white/80">MERN</p>
+                            <p className="text-[7px] uppercase tracking-wider text-white/30">Architecture</p>
+                          </div>
+                          <div className="rounded-lg bg-white/[0.03] p-1.5 text-center">
+                            <p className="text-[9px] font-semibold text-purple-300">REST</p>
+                            <p className="text-[7px] uppercase tracking-wider text-white/30">APIs</p>
+                          </div>
+                          <div className="rounded-lg bg-white/[0.03] p-1.5 text-center">
+                            <p className="text-[9px] font-semibold text-green-300">100%</p>
+                            <p className="text-[7px] uppercase tracking-wider text-white/30">Responsive</p>
                           </div>
                         </div>
                       </div>
@@ -489,7 +463,7 @@ const Projects = () => {
                       sm:text-[10px]
                     "
                   >
-                    React
+                    {project.floatingTech[0]}
                   </div>
 
                   <div
@@ -519,7 +493,7 @@ const Projects = () => {
                       sm:text-[10px]
                     "
                   >
-                    {project.technologies[2]}
+                    {project.floatingTech[1]}
                   </div>
                 </div>
 
@@ -541,30 +515,48 @@ const Projects = () => {
                     lg:py-[60px]
                   "
                 >
-                  {/* Meta */}
+                  {/* Meta with Project Logo badge */}
 
                   <div className="project-meta mb-5 flex items-center gap-3.5">
-                    <span className="project-index font-mono text-[11px] text-purple-300/70">
-                      {project.number}
-                    </span>
+                    <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-white/15 bg-white/5 shadow-md">
+                      <img
+                        src={project.logo}
+                        alt={`${project.title} logo`}
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
 
-                    <span
-                      className="
-                        project-category
-                        rounded-full
-                        border
-                        border-white/[0.07]
-                        bg-white/[0.035]
-                        px-2.5
-                        py-1.5
-                        text-[10px]
-                        uppercase
-                        tracking-[0.12em]
-                        text-white/35
-                      "
-                    >
-                      {project.category}
-                    </span>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="project-index font-mono text-[11px] text-purple-300/70">
+                          {project.number}
+                        </span>
+
+                        <span className="text-white/20">·</span>
+
+                        <span
+                          className="
+                            project-category
+                            rounded-full
+                            border
+                            border-white/[0.07]
+                            bg-white/[0.035]
+                            px-2.5
+                            py-1
+                            text-[10px]
+                            uppercase
+                            tracking-[0.12em]
+                            text-white/45
+                          "
+                        >
+                          {project.category}
+                        </span>
+                      </div>
+
+                      <p className="text-[11px] text-purple-300/60 font-medium">
+                        {project.subtitle}
+                      </p>
+                    </div>
                   </div>
 
                   {/* Title */}
@@ -572,13 +564,13 @@ const Projects = () => {
                   <h3
                     className="
                       project-title
-                      text-[2.3rem]
+                      text-[2.2rem]
                       font-bold
                       leading-[0.95]
                       tracking-[-0.05em]
                       text-white/[0.93]
                       sm:text-5xl
-                      lg:text-[3.6rem]
+                      lg:text-[3.2rem]
                     "
                   >
                     {project.title}
@@ -589,20 +581,31 @@ const Projects = () => {
                   <p
                     className="
                       project-description
-                      mt-6
+                      mt-5
                       max-w-xl
                       text-sm
                       leading-[1.8]
-                      text-white/[0.38]
+                      text-white/[0.5]
                       sm:text-[15px]
                     "
                   >
                     {project.description}
                   </p>
 
+                  {/* Bullet points from resume */}
+
+                  <ul className="mt-4 space-y-2 text-xs leading-5 text-white/55">
+                    {project.bulletPoints.map((point, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-purple-400 mt-0.5">▹</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+
                   {/* Technologies */}
 
-                  <div className="project-tech-list mt-7 flex flex-wrap gap-2">
+                  <div className="project-tech-list mt-6 flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
@@ -615,7 +618,7 @@ const Projects = () => {
                           px-2.5
                           py-1.5
                           text-[10px]
-                          text-white/[0.42]
+                          text-white/[0.55]
                           transition-all
                           duration-300
                           hover:border-purple-400/25
@@ -633,6 +636,8 @@ const Projects = () => {
                   <div className="project-actions mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row">
                     <a
                       href={project.live}
+                      target="_blank"
+                      rel="noreferrer"
                       className="
                         project-link
                         project-live
@@ -655,7 +660,7 @@ const Projects = () => {
                         sm:w-auto
                       "
                     >
-                      <span>Live Project</span>
+                      <span>Live Portfolio</span>
 
                       <span
                         className="
@@ -673,6 +678,8 @@ const Projects = () => {
 
                     <a
                       href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
                       className="
                         project-link
                         project-github
@@ -688,7 +695,7 @@ const Projects = () => {
                         px-[17px]
                         py-3
                         text-xs
-                        text-white/55
+                        text-white/70
                         transition-all
                         duration-300
                         hover:-translate-y-0.5
@@ -698,7 +705,7 @@ const Projects = () => {
                         sm:w-auto
                       "
                     >
-                      <span>GitHub</span>
+                      <span>GitHub Repository</span>
 
                       <span
                         className="
@@ -706,8 +713,8 @@ const Projects = () => {
                           text-[15px]
                           transition-transform
                           duration-300
-                          group-hover:-translate-y-0.5
-                          group-hover:translate-x-0.5
+                          group-hover/link:-translate-y-0.5
+                          group-hover/link:translate-x-0.5
                         "
                       >
                         ↗
@@ -741,12 +748,12 @@ const Projects = () => {
             sm:items-center
           "
         >
-          <p className="text-sm text-white/30">
-            More projects coming soon.
+          <p className="text-sm text-white/35">
+            More projects available on GitHub.
           </p>
 
           <a
-            href="https://github.com/"
+            href="https://github.com/Nirmaljangir91"
             target="_blank"
             rel="noreferrer"
             className="
@@ -756,13 +763,13 @@ const Projects = () => {
               items-center
               gap-3
               text-sm
-              text-white/60
+              text-white/70
               transition-colors
               duration-300
               hover:text-white
             "
           >
-            <span>Explore GitHub</span>
+            <span>Explore GitHub (@Nirmaljangir91)</span>
 
             <span
               className="

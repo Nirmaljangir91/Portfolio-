@@ -2,17 +2,20 @@ import { useLayoutEffect, useRef } from "react";
 import { initAboutAnimation } from "../Animations/About.animation";
 
 const skills = [
-  "React",
-  "JavaScript",
+  "React.js",
+  "JavaScript (ES6+)",
   "Node.js",
   "Express.js",
   "MongoDB",
+  "Mongoose",
+  "RESTful APIs",
   "Tailwind CSS",
-  "GSAP",
-  "MySQL",
-  "SQL",
-  "CI/CD",
-  "Git"
+  "HTML5 & CSS3",
+  "Git & GitHub",
+  "Vite",
+  "CRUD Operations",
+  "Authentication",
+  "Responsive UI"
 ];
 
 const About = () => {
@@ -52,7 +55,7 @@ const About = () => {
         </div>
 
         {/* Main Content */}
-        <div className="mt-20 grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="mt-20 grid items-start gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           {/* LEFT CARD */}
           <div
             className="about-left group relative"
@@ -63,33 +66,77 @@ const About = () => {
 
             <div className="relative rounded-2xl border border-white/10 bg-white/[0.045] p-7 backdrop-blur-xl sm:p-10">
               {/* Top label */}
-              <div className="mb-7 flex items-center gap-3">
-                <span className="h-2 w-2 rounded-full bg-purple-400 shadow-[0_0_12px_rgba(168,85,247,0.9)]" />
+              <div className="mb-7 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <span className="h-2 w-2 rounded-full bg-purple-400 shadow-[0_0_12px_rgba(168,85,247,0.9)]" />
 
-                <span className="text-sm font-medium tracking-wider text-white/50">
-                  ABOUT / 01
+                  <span className="text-sm font-medium tracking-wider text-white/50">
+                    PROFILE & BACKGROUND
+                  </span>
+                </div>
+                <span className="text-xs font-mono text-purple-300/70">
+                  01 / 02
                 </span>
               </div>
 
-              <p className="about-description text-base leading-8 text-white/60 sm:text-sm">
-                I'm Nirmal Jangir, a Computer Science (B.Tech) student at Bikaner Technical University and a MERN Stack Developer Intern at Grass Solution Pvt Ltd. I enjoy turning ideas into modern, interactive web experiences.
+              <p className="about-description text-base leading-8 text-white/70">
+                I'm <strong className="text-white font-semibold">Nirmal Jangid</strong>, a motivated MERN Stack Developer with hands-on experience building full-stack web applications using <strong className="text-purple-300 font-medium">MongoDB, Express.js, React.js, and Node.js</strong>.
               </p>
 
-              <p className="about-description mt-5 text-base leading-8 text-white/60 sm:text-sm">
-                I work primarily with React, JavaScript, Node.js, Express.js, MongoDB, and SQL. I have a strong interest in backend development, API design, CI/CD, and full-stack software development.
+              <p className="about-description mt-4 text-sm leading-7 text-white/60">
+                Skilled in developing responsive user interfaces, building secure RESTful APIs, integrating frontend and backend systems, and managing databases with MongoDB and Mongoose. I have a strong interest in problem-solving, writing clean and maintainable code, and developing scalable, user-friendly web applications.
               </p>
 
-              <p className="about-description mt-5 text-base leading-8 text-white/60 sm:text-lg">
-                I believe the best way to learn software development is by
-                building. That's why I continuously experiment with new
-                technologies, create practical projects, and challenge myself
-                to improve both my technical and problem-solving skills.
-              </p>
+              {/* Work Experience Section */}
+              <div className="about-description mt-6 rounded-xl border border-white/[0.08] bg-white/[0.03] p-5">
+                <div className="flex items-center justify-between">
+                  <h4 className="font-semibold text-white">
+                    MERN Stack Developer
+                  </h4>
+                  <span className="rounded-full bg-purple-500/20 px-2.5 py-0.5 text-xs font-medium text-purple-300">
+                    6 Months
+                  </span>
+                </div>
+                <p className="mt-1 text-xs text-purple-300/70">
+                  Grass Solution
+                </p>
+                <ul className="mt-3 space-y-2 text-xs leading-5 text-white/50">
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400">▹</span>
+                    <span>Developed responsive user interfaces and integrated frontend components with RESTful APIs.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400">▹</span>
+                    <span>Assisted with MongoDB database operations and backend application functionality.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-purple-400">▹</span>
+                    <span>Conducted debugging, testing, and continuous code improvements using Git and GitHub.</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Education Section */}
+              <div className="about-description mt-5 rounded-xl border border-white/[0.08] bg-white/[0.03] p-5">
+                <div className="flex items-center justify-between">
+                  <h4 className="font-semibold text-white">
+                    Bikaner Technical University (BTU)
+                  </h4>
+                  <span className="text-xs text-white/40">B.Tech</span>
+                </div>
+                <p className="mt-1 text-xs text-purple-300/70">
+                  Bachelor of Technology in Computer Science
+                </p>
+                <div className="mt-3 border-t border-white/[0.05] pt-3 text-xs text-white/45">
+                  <p>• Pragati Shikshan Sansthan Sr. Sec. School, Sikar — Senior Secondary (Class XII)</p>
+                  <p className="mt-1">• Pragati Shikshan Sansthan Sr. Sec. School, Sikar — Secondary (Class X)</p>
+                </div>
+              </div>
 
               {/* Quote */}
-              <div className="about-quote mt-8 border-l border-purple-400/60 pl-5">
-                <p className="text-sm italic leading-6 text-white/40">
-                  "Build. Break. Learn. Improve."
+              <div className="about-quote mt-6 border-l-2 border-purple-400/60 pl-5">
+                <p className="text-sm italic leading-6 text-white/45">
+                  "Driven by clean code, practical problem-solving, and continuous learning."
                 </p>
               </div>
             </div>
@@ -106,33 +153,32 @@ const About = () => {
               <div className="profile-gradient pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-purple-500/20 blur-3xl transition-all duration-500 group-hover:bg-purple-500/30" />
 
               <div className="relative">
-                <div className="mb-8 flex items-center justify-between">
+                <div className="mb-6 flex items-center justify-between">
                   <span className="text-sm tracking-wider text-white/40">
-                    DEVELOPER / 02
+                    TECHNICAL EXPERTISE
                   </span>
 
                   <span className="rounded-full border border-green-400/20 bg-green-400/10 px-3 py-1 text-xs text-green-300">
-                    Available
+                    Available for Work
                   </span>
                 </div>
 
                 <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-                  Building digital
+                  Full-Stack MERN
                   <br />
-                  <span className="text-purple-300">experiences.</span>
+                  <span className="text-purple-300">Specialist.</span>
                 </h3>
 
-                <p className="mt-5 max-w-md text-sm leading-7 text-white/40">
-                  Focused on creating modern interfaces, smooth interactions,
-                  and scalable full-stack applications.
+                <p className="mt-4 text-sm leading-7 text-white/50">
+                  Focusing on responsive UI engineering, RESTful API architecture, MongoDB schemas, and reliable error handling.
                 </p>
 
                 {/* Skills */}
-                <div className="mt-8 flex flex-wrap gap-2">
+                <div className="mt-7 flex flex-wrap gap-2">
                   {skills.map((skill) => (
                     <span
                       key={skill}
-                      className="skill-item rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs text-white/50 transition-all duration-300 hover:border-purple-400/30 hover:bg-purple-400/10 hover:text-purple-200"
+                      className="skill-item rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs text-white/60 transition-all duration-300 hover:border-purple-400/40 hover:bg-purple-400/15 hover:text-purple-200"
                     >
                       {skill}
                     </span>
@@ -147,10 +193,10 @@ const About = () => {
                 className="about-stat rounded-2xl border border-white/10 bg-white/[0.035] p-6 backdrop-blur-xl"
                 data-card
               >
-                <span className="text-3xl font-bold text-white">MERN</span>
+                <span className="text-3xl font-bold text-white">6 Mo</span>
 
-                <p className="mt-2 text-xs uppercase tracking-widest text-white/30">
-                  Full Stack
+                <p className="mt-2 text-xs uppercase tracking-widest text-white/40">
+                  Grass Solution Exp
                 </p>
               </div>
 
@@ -159,11 +205,11 @@ const About = () => {
                 data-card
               >
                 <span className="text-3xl font-bold text-purple-300">
-                  GSAP
+                  B.Tech
                 </span>
 
-                <p className="mt-2 text-xs uppercase tracking-widest text-white/30">
-                  Animation
+                <p className="mt-2 text-xs uppercase tracking-widest text-white/40">
+                  CSE · BTU
                 </p>
               </div>
             </div>
