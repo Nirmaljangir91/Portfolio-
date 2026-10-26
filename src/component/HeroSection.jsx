@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { heroAnimation } from "../Animations/Hero.animation";
+import profileImg from "../asset/image.jpg";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -156,41 +157,37 @@ const Hero = () => {
               className="profile-card relative flex h-[300px] w-[300px] items-center justify-center rounded-full border border-white/15 bg-white/[0.05] p-3 shadow-2xl backdrop-blur-xl"
             >
 
-              <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border border-white/10 bg-gradient-to-br from-purple-950 via-[#17101f] to-black">
+              <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border border-purple-500/30 bg-[#120d1c] shadow-inner">
 
                 {/* Inner glow */}
 
-                <div className="profile-inner-glow absolute h-48 w-48 rounded-full bg-purple-500/20 blur-[70px]" />
+                <div className="profile-inner-glow pointer-events-none absolute h-48 w-48 rounded-full bg-purple-500/30 blur-[70px]" />
 
-                {/* Initial */}
+                {/* Profile Image */}
 
-                <div className="profile-initial relative select-none text-[9rem] font-bold leading-none tracking-[-0.08em] text-white/90">
-                  N
-                </div>
+                <img
+                  src={profileImg}
+                  alt="Nirmal Jangid"
+                  className="profile-initial relative z-10 h-full w-full rounded-full object-cover object-center select-none"
+                />
 
-                {/* Gradient */}
+                {/* Subtle rim highlight */}
 
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-
-                {/* Name */}
-
-                <div className="absolute bottom-8 left-0 right-0 text-center">
-
-                  <p className="text-[10px] uppercase tracking-[0.4em] text-white/40">
-                    MERN Developer
-                  </p>
-
-                  <h2 className="mt-1 text-xl font-semibold text-white/90">
-                    Nirmal Jangid
-                  </h2>
-
-                </div>
+                <div className="pointer-events-none absolute inset-0 z-20 rounded-full ring-1 ring-inset ring-white/15" />
 
               </div>
 
               {/* Glowing dot */}
 
-              <div className="profile-dot absolute right-3 top-16 h-3 w-3 rounded-full bg-purple-400 shadow-[0_0_20px_rgba(168,85,247,0.9)]" />
+              <div className="profile-dot absolute right-3 top-16 z-30 h-3 w-3 rounded-full bg-purple-400 shadow-[0_0_20px_rgba(168,85,247,0.9)]" />
+
+              {/* Name badge below circle */}
+
+              <div className="absolute -bottom-3 left-1/2 z-30 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/15 bg-[#0a0712]/90 px-4 py-1 text-center shadow-lg backdrop-blur-md">
+                <span className="text-xs font-medium text-white/90">
+                  Nirmal Jangid
+                </span>
+              </div>
 
             </div>
 
